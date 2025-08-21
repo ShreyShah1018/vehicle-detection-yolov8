@@ -1,0 +1,5 @@
+train: C:\Users\sshre\OneDrive\Desktop\Resume_Projects\vehicle-detection-yolov8\data\train\images
+val: C:\Users\sshre\OneDrive\Desktop\Resume_Projects\vehicle-detection-yolov8\data\valid\images
+
+nc: 1
+names: ['Vehicle']
