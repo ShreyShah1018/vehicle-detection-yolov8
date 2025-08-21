@@ -75,7 +75,10 @@ if st.button("🔄 Run Tracking + Analytics"):
         time.sleep(1.5)
 
     # ✅ Now use input_path and is_stream correctly
-    run_full_pipeline(input_path, OUTPUT_DIR, is_stream=is_stream, timeout_seconds=30)
+    try:
+        run_full_pipeline(input_path, OUTPUT_DIR, is_stream=is_stream, timeout_seconds=30)
+    except Exception as e:
+        st.error(f"Stream error: {e}")
 
     duration = time.time() - start_time
     st.success(f"✅ Processing complete in {int(duration)} seconds.")

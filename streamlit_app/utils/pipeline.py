@@ -23,7 +23,9 @@ def run_full_pipeline(input_path, output_dir, is_stream=False, timeout_seconds=3
 
     if is_stream:
         from utils.youtube_stream import open_youtube_stream
-        cap = open_youtube_stream(input_path)
+        cap = open_youtube_stream(input_path, max_height=720)
+        if cap is None:
+            raise RuntimeError("Failed to open YouTube stream. Try another URL or lower resolution.")
     else:
         cap = cv2.VideoCapture(input_path)
 
