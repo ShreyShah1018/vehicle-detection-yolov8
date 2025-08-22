@@ -67,28 +67,41 @@ This project implements a state-of-the-art vehicle detection and tracking system
 
 ### System Overview
 
-![System Architecture](images/Architechture_diagram.png)
-
 *High-level system architecture showing the complete data flow from video input to analytics output*
 
 The system follows a modular architecture with the following key components:
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Input Video   │───▶│  YOLOv8 Model   │───▶│  DeepSORT       │
-│   (MP4/YouTube) │    │   Detection     │    │   Tracker       │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                                       │
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Analytics     │◀───│  Tracking Log   │◀───│  Bounding Boxes │
-│   Generation    │    │   (CSV)         │    │   & Track IDs   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Heatmap       │    │   Timeline      │    │   Streamlit     │
-│   Generation    │    │   Graph         │    │   Dashboard     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
+![System Architecture](images/Architechture_diagram.png)
+
+## Technology Stack
+
+### Machine Learning & Computer Vision
+- **YOLOv8** - Object detection
+- **DeepSORT** - Multi-object tracking
+- **OpenCV** - Computer vision processing
+- **Ultralytics** - YOLO framework
+
+### 🌐 Web Application
+- **Streamlit** - Dashboard interface
+- **HTML/CSS/JavaScript** - Frontend
+
+### 📊 Data Analysis & Visualization
+- **Pandas** - Data manipulation
+- **Matplotlib/Seaborn** - Visualizations
+- **NumPy** - Numerical computing
+- **Plotly** - Interactive plots
+
+### 🔧 Backend & Processing
+- **Python 3.8+** - Core language
+- **FFmpeg** - Video processing
+- **Pillow** - Image processing
+- **Requests** - HTTP requests
+
+### 🎯 Specialized Libraries
+- **deep-sort-realtime** - Real-time tracking
+- **PyTorch** - Deep learning framework
+- **YouTube-DL/Pafy** - YouTube processing
+- **tqdm** - Progress tracking
 
 ### Component Details
 
