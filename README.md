@@ -43,7 +43,7 @@ This project implements a state-of-the-art vehicle detection and tracking system
 - **Real-time Processing**: Frame-by-frame analysis with configurable parameters
 - **Output Generation**: Annotated videos with bounding boxes and tracking IDs
 
-![Annotated Frame Example](images/Annotated_Frame.png)
+
 
 *Example of vehicle detection and tracking with bounding boxes, confidence scores, and unique track IDs*
 
@@ -53,7 +53,6 @@ This project implements a state-of-the-art vehicle detection and tracking system
 - **Tracking Statistics**: Real-time metrics during video playback
 - **Model Performance**: Confusion matrix and evaluation metrics display
 
-![Analytics Dashboard](images/Analytics.png)
 
 *Comprehensive analytics interface showing vehicle density heatmaps, count timelines, and tracking statistics*
 
@@ -191,7 +190,11 @@ wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
 3. Click "Run Tracking + Analytics"
 4. The system will process the live stream for the specified timeout period
 
+Raw frame from Youtube stream:
 ![YouTube Live Stream Processing](images/Youtube_live_stream_frame.png)
+
+Annotated frame after processing:
+![Annotated Frame Example](images/Annotated_Frame.png)
 
 *Real-time processing of YouTube live streams with vehicle detection and tracking*
 
@@ -283,7 +286,7 @@ model.train(
 - **Inference Speed**: ~30 FPS (GPU)
 
 ## 📊 Analytics
-
+![Analytics Dashboard](images/Analytics.png)
 ### Vehicle Density Heatmap
 
 The system generates zone-based heatmaps showing vehicle concentration:
@@ -369,29 +372,6 @@ generate_vehicle_count_timeline(
 )
 ```
 
-## 🖼️ Screenshots
-
-The following screenshots showcase the key features and capabilities of the vehicle detection and tracking system:
-
-### 🎬 Live Application Demo
-![Dashboard Demo](images/Dashboard.gif)
-*Interactive demonstration of the complete application workflow from video upload to analytics display*
-
-### 🏗️ System Architecture
-![System Architecture](images/Architechture_diagram.png)
-*High-level system architecture showing the complete data flow from video input to analytics output*
-
-### 🎥 Vehicle Detection & Tracking
-![Annotated Frame Example](images/Annotated_Frame.png)
-*Example of vehicle detection and tracking with bounding boxes, confidence scores, and unique track IDs*
-
-### 📊 Analytics Dashboard
-![Analytics Dashboard](images/Analytics.png)
-*Comprehensive analytics interface showing vehicle density heatmaps, count timelines, and tracking statistics*
-
-### 🌐 YouTube Live Stream Processing
-![YouTube Live Stream Processing](images/Youtube_live_stream_frame.png)
-*Real-time processing of YouTube live streams with vehicle detection and tracking capabilities*
 
 ## 🤝 Contributing
 
