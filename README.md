@@ -29,6 +29,12 @@ This project implements a state-of-the-art vehicle detection and tracking system
 - **Multiple Input Sources**: Support for uploaded videos and YouTube streams
 - **Model Evaluation**: Built-in performance metrics and confusion matrices
 
+### 🎬 Live Demo
+
+![Dashboard Demo](images/Dashboard.gif)
+
+*Interactive demonstration of the complete vehicle detection and tracking system workflow*
+
 ## ✨ Features
 
 ### 🎥 Video Processing
@@ -37,11 +43,19 @@ This project implements a state-of-the-art vehicle detection and tracking system
 - **Real-time Processing**: Frame-by-frame analysis with configurable parameters
 - **Output Generation**: Annotated videos with bounding boxes and tracking IDs
 
+![Annotated Frame Example](images/Annotated_Frame.png)
+
+*Example of vehicle detection and tracking with bounding boxes, confidence scores, and unique track IDs*
+
 ### 📊 Analytics Dashboard
 - **Vehicle Density Heatmap**: Zone-based heatmap showing vehicle concentration areas
 - **Count Timeline**: Frame-wise vehicle count visualization
 - **Tracking Statistics**: Real-time metrics during video playback
 - **Model Performance**: Confusion matrix and evaluation metrics display
+
+![Analytics Dashboard](images/Analytics.png)
+
+*Comprehensive analytics interface showing vehicle density heatmaps, count timelines, and tracking statistics*
 
 ### 🔧 Technical Features
 - **Non-Maximum Suppression**: Advanced NMS for improved detection accuracy
@@ -49,9 +63,16 @@ This project implements a state-of-the-art vehicle detection and tracking system
 - **Area-based Filtering**: Minimum area thresholds for detection validation
 - **Configurable Parameters**: Adjustable confidence thresholds and tracking parameters
 
+
 ## 🏗️ Architecture
 
 ### System Overview
+
+![System Architecture](images/Architechture_diagram.png)
+
+*High-level system architecture showing the complete data flow from video input to analytics output*
+
+The system follows a modular architecture with the following key components:
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -169,6 +190,10 @@ wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
 2. Paste a YouTube live stream URL
 3. Click "Run Tracking + Analytics"
 4. The system will process the live stream for the specified timeout period
+
+![YouTube Live Stream Processing](images/Youtube_live_stream_frame.png)
+
+*Real-time processing of YouTube live streams with vehicle detection and tracking*
 
 #### Parameter Tuning
 
@@ -346,25 +371,27 @@ generate_vehicle_count_timeline(
 
 ## 🖼️ Screenshots
 
-### Dashboard Overview
-![Dashboard Overview](images/dashboard_overview.png)
-*Main Streamlit dashboard showing video upload, processing controls, and analytics display*
+The following screenshots showcase the key features and capabilities of the vehicle detection and tracking system:
 
-### Vehicle Density Heatmap
-![Vehicle Heatmap](images/vehicle_heatmap.png)
-*Zone-based heatmap showing vehicle concentration across different areas of the video frame*
+### 🎬 Live Application Demo
+![Dashboard Demo](images/Dashboard.gif)
+*Interactive demonstration of the complete application workflow from video upload to analytics display*
 
-### Vehicle Count Timeline
-![Vehicle Count Timeline](images/vehicle_count_timeline.png)
-*Frame-wise vehicle count showing temporal patterns and traffic flow analysis*
+### 🏗️ System Architecture
+![System Architecture](images/Architechture_diagram.png)
+*High-level system architecture showing the complete data flow from video input to analytics output*
 
-### System Architecture
-![System Architecture](images/system_architecture.png)
-*High-level system architecture showing data flow from input to analytics output*
+### 🎥 Vehicle Detection & Tracking
+![Annotated Frame Example](images/Annotated_Frame.png)
+*Example of vehicle detection and tracking with bounding boxes, confidence scores, and unique track IDs*
 
-### Working Application Demo
-![Working App Demo](images/working_app_demo.gif)
-*Animated demonstration of the complete application workflow from video upload to analytics display*
+### 📊 Analytics Dashboard
+![Analytics Dashboard](images/Analytics.png)
+*Comprehensive analytics interface showing vehicle density heatmaps, count timelines, and tracking statistics*
+
+### 🌐 YouTube Live Stream Processing
+![YouTube Live Stream Processing](images/Youtube_live_stream_frame.png)
+*Real-time processing of YouTube live streams with vehicle detection and tracking capabilities*
 
 ## 🤝 Contributing
 
